@@ -1,4 +1,4 @@
-## Practice Questions
+# Practice Questions
 
 1. What is []?
 _An empty list_
