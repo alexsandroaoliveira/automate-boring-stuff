@@ -2,7 +2,7 @@
 
 ## The List Data Type
 
-```batch
+```bash
 >>> [1, 2, 3]
 [1, 2, 3]
 >>> ['cat', 'bat', 'rat', 'elephant']
@@ -20,7 +20,7 @@
 
 ### Negative Indexes
 
-```batch
+```bash
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[-1]
 'elephant'
@@ -30,7 +30,7 @@
 
 ### Getting Sublists with Slices
 
-```batch
+```bash
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[0:4]
 ['cat', 'bat', 'rat', 'elephant']
@@ -51,7 +51,7 @@ Lists 83
 
 ### Getting a List’s Length with len()
 
-```batch
+```bash
 >>> spam = ['cat', 'dog', 'moose']
 >>> len(spam)
 3
@@ -59,7 +59,7 @@ Lists 83
 
 ### Changing Values in a List with Indexes
 
-```batch
+```bash
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[1] = 'aardvark'
 >>> spam
@@ -74,7 +74,7 @@ Lists 83
 
 ### List Concatenation and List Replication
 
-```batch
+```bash
 >>> [1, 2, 3] + ['A', 'B', 'C']
 [1, 2, 3, 'A', 'B', 'C']
 >>> ['X', 'Y', 'Z'] * 3
@@ -87,7 +87,7 @@ Lists 83
 
 ### Removing Values from Lists with del Statements
 
-```batch
+```bash
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> del spam[2]
 >>> spam
@@ -125,7 +125,7 @@ for i in [0, 1, 2, 3]:
 
 ### The in and not in Operators
 
-```batch
+```bash
 >>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
 True
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
@@ -139,7 +139,7 @@ True
 
 ### The Multiple Assignment Trick
 
-```batch
+```bash
 >>> cat = ['fat', 'black', 'loud']
 >>> size = cat[0]
 >>> color = cat[1]
@@ -148,7 +148,7 @@ True
 
 is equals to:
 
-```batch
+```bash
 >>> cat = ['fat', 'black', 'loud']
 >>> size, color, disposition = cat
 ```
@@ -163,7 +163,7 @@ is equals to:
 | spam = spam / 1 | spam /= 1 |
 | spam = spam % 1 | spam %= 1 |
 
-```batch
+```bash
 >>> spam = 'Hello'
 >>> spam += ' world!'
 >>> spam
@@ -179,7 +179,7 @@ Lists 89
 
 ### Finding a Value in a List with the index() Method
 
-```batch
+```bash
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
 >>> spam.index('hello')
 0
@@ -194,7 +194,7 @@ ValueError: 'howdy howdy howdy' is not in list
 
 ### Adding Values to Lists with the append() and insert() Methods
 
-```batch
+```bash
 rem append
 >>> spam = ['cat', 'dog', 'bat']
 >>> spam.append('moose')
@@ -210,7 +210,7 @@ rem insert
 ```
 
 ### Removing Values from Lists with remove() 
-```batch
+```bash
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam.remove('bat')
 >>> spam
@@ -224,7 +224,7 @@ rem insert
 
 ### Sorting the Values in a List with the sort() Method
 
-```batch
+```bash
 >>> spam = [2, 5, 3.14, 1, -7]
 >>> spam.sort()
 >>> spam
@@ -275,7 +275,7 @@ print('Four score and seven ' + \
 
 ## List-like Types: Strings and Tuples
 
-```batch
+```bash
 >>> name = 'Zophie'
 >>> name[0]
 'Z'
@@ -295,7 +295,7 @@ False
 
  ## Mutable and Immutable Data Types
 
-```batch
+```bash
 >>> name = 'Zophie a cat'
 >>> name[7] = 'the'
 Traceback (most recent call last):
@@ -314,7 +314,7 @@ Lists 95
 
 ## The Tuple Data Type
 
-```batch
+```bash
 >>> eggs = ('hello', 42, 0.5)
 >>> eggs[0]
 'hello'
@@ -338,7 +338,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ## Converting Types with the list() and tuple() Functions
 
-```batch 
+```bash 
 >>> tuple(['cat', 'dog', 5])
 ('cat', 'dog', 5)
 >>> list(('cat', 'dog', 5))
@@ -349,7 +349,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ## References
 
-```batch
+```bash
 >>> spam = 42
 >>> cheese = spam
 >>> spam = 100
@@ -369,7 +369,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### Passing References
 
-```batch
+```bash
 def eggs(someParameter):
  someParameter.append('Hello')
 spam = [1, 2, 3]
@@ -379,7 +379,7 @@ print(spam)
 
 ### The copy Module’s copy() and deepcopy() Functions
 
-```batch
+```bash
 >>> import copy
 >>> spam = ['A', 'B', 'C', 'D']
 >>> cheese = copy.copy(spam)

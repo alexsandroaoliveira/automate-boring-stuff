@@ -2,7 +2,7 @@
 
 ## The Dictionary Data Type
 
-```batch
+```bash
 >>> myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 >>> myCat['size']
 'fat'
@@ -15,7 +15,7 @@ rem int key
 
 ## Dictionaries vs. Lists
 
-```batch
+```bash
 >>> spam = ['cats', 'dogs', 'moose']
 >>> bacon = ['dogs', 'moose', 'cats']
 >>> spam == bacon
@@ -35,7 +35,7 @@ KeyError: 'color'
 
 ## The keys(), values(), and items() Methods
 
-```batch
+```bash
 rem values
 >>> spam = {'color': 'red', 'age': 42}
 >>> for v in spam.values():
@@ -70,7 +70,7 @@ Key: color Value: red
 
 ## Checking Whether a Key or Value Exists in a Dictionary
 
-```batch
+```bash
 >>> spam = {'name': 'Zophie', 'age': 7}
 >>> 'name' in spam.keys()
 True
@@ -86,7 +86,7 @@ False
 
 ## The get() Method
 
-```batch
+```bash
 >>> picnicItems = {'apples': 5, 'cups': 2}
 >>> 'I am bringing ' + str(picnicItems.get('cups', 0)) + ' cups.'
 'I am bringing 2 cups.'
@@ -103,7 +103,7 @@ KeyError: 'eggs'
 
 ## The setdefault() Method
 
-```batch
+```bash
 spam = {'name': 'Pooka', 'age': 5}
 if 'color' not in spam:
  spam['color'] = 'black'
@@ -140,7 +140,7 @@ print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
 print(' - Apple Pies ' + str(totalBrought(allGuests, 'apple pies')))
 ```
 
-```batch
+```bash
 Number of things being brought:
  - Apples 7
  - Cups 3
